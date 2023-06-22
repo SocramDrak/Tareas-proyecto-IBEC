@@ -11,12 +11,12 @@ router.post('/alta',crearTarea);
 router.get('/vertareas',verTareas);
 
 //buscar tarea  http://localhost:8080/api/v1/buscar
-router.get('/buscar',buscarTarea);
+router.get('/buscar/:id', buscarTarea);
 
 //editar tarea  http://localhost:8080/api/v1/editar
 router.put('/editar',editarTarea);
 
 //eliminar tarea  http://localhost:8080/api/v1/eliminar
-router.delete('/eliminar',eliminarTarea);
+router.delete('/eliminar/:id',eliminarTarea);
 
 module.exports=router;
